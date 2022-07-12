@@ -1,23 +1,23 @@
 package middleware
 
 import (
-	"log"
+	// "log"
 
 	"github.com/gofiber/fiber/v2"
-	jwtware "github.com/gofiber/jwt/v3"
-	"github.com/penkong/data4life/util"
+	// jwtware "github.com/gofiber/jwt/v3"
+	// "github.com/penkong/data4life/gateway/config"
 )
 
 // Protected protect routes
-func Protected() fiber.Handler {
+// func Protected() fiber.Handler {
 
-	conf, err := util.LoadConfig(".")
-	if err != nil {
-		log.Fatal("cannot load config:", err)
-	}
+// 	conf, err := config.LoadConfig(".")
+// 	if err != nil {
+// 		log.Fatal("cannot load config:", err)
+// 	}
 
-	return jwtware.New(jwtware.Config{
-		SigningKey:   []byte(conf.TokenSecret),
-		ErrorHandler: jwtError,
-	})
-}
+// 	return jwtware.New(jwtware.Config{
+// 		SigningKey:   []byte(conf.TokenSecret),
+// 		ErrorHandler: jwtError,
+// 	})
+// }

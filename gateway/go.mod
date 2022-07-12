@@ -1,21 +1,19 @@
-module github.com/penkong/data4life/gateway
+module github.com/penkong/fiber-sqlc/gateway
 
 go 1.18
 
 require (
 	github.com/gofiber/fiber/v2 v2.34.1
-	github.com/gofiber/jwt/v3 v3.2.12
-	github.com/lib/pq v1.10.6
-	github.com/penkong/data4life v0.0.0-20220628131336-d2b22f4524c6
+	github.com/penkong/data4life/gateway v0.0.0-20220701011559-4d0e2e62e343
 	github.com/spf13/viper v1.12.0
 )
 
 require (
 	github.com/andybalholm/brotli v1.0.4 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
-	github.com/golang-jwt/jwt/v4 v4.4.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/klauspost/compress v1.15.6 // indirect
+	github.com/lib/pq v1.10.6 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml v1.9.5 // indirect

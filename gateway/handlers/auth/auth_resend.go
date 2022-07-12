@@ -1,9 +1,9 @@
-package authCtrl
+package authHandlers
 
 import "github.com/gofiber/fiber/v2"
 
-func Register(c *fiber.Ctx) error {
+func ReSend(c *fiber.Ctx) error {
 	return c.Status(fiber.StatusAccepted).JSON(fiber.Map{
-		"msg": "try reigster",
+		"msg": "try Resend",
 	})
 }

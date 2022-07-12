@@ -1,4 +1,4 @@
-package userCtrl
+package userHandlers
 
 import (
 	"github.com/gofiber/fiber/v2"

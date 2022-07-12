@@ -1,2 +1,2 @@
-# data4life
+# fiber-sqlc
 golang task
