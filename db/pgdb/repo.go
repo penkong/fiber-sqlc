@@ -1,13 +1,13 @@
 package pgdb
 
-import "database/sql"
+import "github.com/jackc/pgx/v4"
 
 type Repo struct {
 	*Queries
-	DB *sql.DB
+	DB *pgx.Conn
 }
 
-func NewRepo(db *sql.DB) *Repo {
+func NewRepo(db *pgx.Conn) *Repo {
 	return &Repo{
 		DB:      db,
 		Queries: New(db),

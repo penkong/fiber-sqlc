@@ -2,7 +2,6 @@ package apirouters
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/penkong/data4life/gateway/db/pgdb"
 )
 
 type Handlers struct {

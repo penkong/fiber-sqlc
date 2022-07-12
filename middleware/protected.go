@@ -5,7 +5,6 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	// jwtware "github.com/gofiber/jwt/v3"
-	// "github.com/penkong/data4life/gateway/config"
 )
 
 // Protected protect routes

@@ -2,7 +2,6 @@ package userHandlers
 
 import (
 	"github.com/gofiber/fiber/v2"
-	// connectdb "github.com/penkong/data4life/pkg/connect_db"
 )
 
 func UpdateUser(c *fiber.Ctx) error {

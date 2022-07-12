@@ -2,8 +2,6 @@ package apirouters
 
 import (
 	"github.com/gofiber/fiber/v2"
-	// userHandlers "github.com/penkong/data4life/gateway/handlers/user"
-	// "github.com/penkong/data4life/gateway/middleware"
 )
 
 func SetUpUser(r fiber.Router) {

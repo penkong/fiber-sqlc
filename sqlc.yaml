@@ -3,6 +3,7 @@ project:
   id: ""
 packages:
   - name: 'pgdb'
+    sql_library: "pgx/v4"
     path: './db/pgdb'
     queries: './db/query/'
     schema: './db/schema/'

@@ -1,7 +1,7 @@
 package main
 
 import (
-	app "github.com/penkong/data4life/gateway"
+	app "github.com/penkong/fiber-sqlc/gateway"
 	"log"
 )
 

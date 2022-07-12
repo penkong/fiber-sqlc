@@ -10,13 +10,13 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/recover"
 	// _ "github.com/lib/pq"
 	//
-	"github.com/penkong/fiber-sqlc/gateway/config"
-	// "github.com/penkong/fiber-sqlc/gateway/pkg/connect_db"
-	// "github.com/penkong/fiber-sqlc/gateway/router"
+	"github.com/penkong/fiber-sqlc/config"
+	connectdb "github.com/penkong/fiber-sqlc/gateway/pkg/connect_db"
+	"github.com/penkong/fiber-sqlc/gateway/router"
 )
 
 var app *fiber.App
-var Conf conf.Config
+var Conf config.Config
 var Conf_err error
 
 // Init function , do bootstrap parts here .
@@ -29,7 +29,7 @@ func init() {
 	}
 
 	// database connections
-	// connectdb.Setup(&Conf)
+	connectdb.Setup(&Conf)
 
 	// make instance of fiber .
 	app = fiber.New(fiber.Config{
@@ -47,7 +47,7 @@ func init() {
 	app.Use(cors.New())
 
 	// routers
-	// apirouters.Setup(app)
+	apirouters.Setup(app)
 }
 
 // clean port and allow to listen on CMD
